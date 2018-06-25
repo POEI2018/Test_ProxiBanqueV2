@@ -1,0 +1,25 @@
+=====================    Spring Framework =================================
+
+   1) PI, Librairie et Framework
+   2) Inversiond e control
+
+
+------------------   1) API, Librairie et Framework  -----------------------------
+
+   - difference entre librairie et Framework :  
+     * Framework : un cadre dans lequel developper une application
+     * API       : Une base commune pour construire une application standard  J2SE (JDBC, Collection, io, Exception, util, lang, swing, awt, stream (java8)...)
+                                                                              J2EE (Servlet, JSP, ....)
+     * Librairie : code qu'on a importé dans le projet (librairie bootstrap, logback, ...)
+     * Une API instaure un standard, une librairie est un choix d'implementation  
+     * On retrouve du code source dans une API, librarie ou Framework (point en commun) 
+   
+
+------------------   1) Inversion de control  -------------------------------------
+   
+   - 
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+   - rq : mojarra, tomahawk : implementations de JSF (contraiement a primefaces, incefaces qui sont des librairies de tag JSF)
+---------------------------------------------------------------------------------------------------------------------------------      
