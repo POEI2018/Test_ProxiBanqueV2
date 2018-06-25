@@ -2,6 +2,7 @@
 
    1) PI, Librairie et Framework
    2) Inversiond e control
+   3) Example
 
 
 ------------------   1) API, Librairie et Framework  -----------------------------
@@ -15,11 +16,49 @@
      * On retrouve du code source dans une API, librarie ou Framework (point en commun) 
    
 
-------------------   1) Inversion de control  -------------------------------------
+------------------   2) Inversion de control  -------------------------------------
    
-   - 
+   - Liens entre differentes couches presentes a des endroits differents (on peux pas instancier un objet serviceImpl, daoImpl)
+   - Spring context : module de base de spring 
+   - IoC : Inversion of Control
+   - Spring context est construit autour du principe de l'injection de dependances (DI) et l'inversion de controles (ioC)
 
+------------------   3) Example  -------------------------------------
+   
+   - Configuration : ajout des dependances dans maven : 
+     <properties>
+	<spring.version>5.0.7.RELEASE</spring.version>
+     </properties>
 
+     <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-beans</artifactId>
+	<version>${spring.version}</version>
+     </dependency>
+     <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-core</artifactId>
+	<version>${spring.version}</version>
+     </dependency>
+     <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-aop</artifactId>
+	<version>${spring.version}</version>
+     </dependency>
+     <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-expression</artifactId>
+	<version>${spring.version}</version>
+     </dependency>
+
+   - Application context : le conteneur de bean de spring 
+   - creation d'un fichier "spring-dispatcher-servlet.xml" dans src/main/resources
+   - ajout d'un <context-param> et d'un <context-listener> dans le web.xml
+
+--------------------------------------------------------------------------------------------------------------------------------- 
+   - Liens utiles 
+     * Documentation Spring 5: https://docs.spring.io/spring/docs/5.0.7.RELEASE/spring-framework-reference/
+     * Mettre a jour un fork : https://help.github.com/articles/syncing-a-fork/
 ---------------------------------------------------------------------------------------------------------------------------------
    - rq : mojarra, tomahawk : implementations de JSF (contraiement a primefaces, incefaces qui sont des librairies de tag JSF)
 ---------------------------------------------------------------------------------------------------------------------------------      
